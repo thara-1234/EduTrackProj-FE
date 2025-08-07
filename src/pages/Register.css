@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #b9f5b0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px bold black;
+    background-color: rgb(194, 157, 228);
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+}
+h1{
+    font-size: 60px;
+}
+input{
+    font-size: 18px;
+    font-weight: bold;
+  margin-bottom: 5px;
+  width: 50%;
+}
+label{
+font-size: 25px;
+    font-weight: bold;
+  margin-bottom: 5px;
+  width: 50%;
+}
+select{
+    font-size: 18px;
+    font-weight: bold;
+  margin-bottom: 5px;
+  width: 30%;
+}
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+button{
+    padding: 8px;
+    text-align: center;
+    font-size: medium;
+    background-color: rgb(242, 244, 104);
+}
+.link a {
+    text-decoration: none;
+    color: #007bff; 
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+.link p {
+  font-size: 23px;
+}

@@ -15,6 +15,7 @@ const Register = () => {
     async function handleSubmit(event) {
         event.preventDefault();
         try{
+            console.log(formData)
             const response= await ApiService.registerUser(formData);// Sends the form data to the backend and Waits for a response from the backend
             console.log("Registration Successful",response);
             alert("Registration successful!")
@@ -28,7 +29,7 @@ const Register = () => {
     
   return (
     <div className='container'>
-        <h1>Register</h1>
+        <h1 style={{fontStyle:"italic"}}>Register Here!!</h1>
         <form onSubmit={handleSubmit}>
             <label>Email:</label><br/>
             <input 
@@ -69,15 +70,15 @@ const Register = () => {
             <label>Role:</label><br/>
             <select name="roleName"  value={formData.roleName}
             onChange={(e) => setFormData({ ...formData, roleName: e.target.value })}>
-                <option value="admin">ADMIN</option>
-                <option value="hod">HOD</option>
-                <option value="pic">PROJECT-IN-CHARGE</option>
-                <option value="guide">INTERNAL GUIDE</option>
-                <option value="student">STUDENT</option>
+                <option value="ADMIN">ADMIN</option>
+                <option value="HOD">HOD</option>
+                <option value="PROJECT_IN_CHARGE">PROJECT_IN_CHARGE</option>
+                <option value="INTERNAL_GUIDE">INTERNAL_GUIDE</option>
+                <option value="STUDENT">STUDENT</option>
             </select>
              <br/><br/>
             <button type="submit" className='button'>Register</button>
-            <div>
+            <div className='link'>
                 <p>Already have an account? <a href="/login">Login</a></p>
             </div>
         </form>
