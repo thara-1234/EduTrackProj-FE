@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ProfileComplete.css'
+import '../styles/ProfileComplete.css'
 import ApiService from '../services/ApiService';
 import { useNavigate } from 'react-router-dom';
 const ProfileComplete = () => {
@@ -26,7 +26,7 @@ const ProfileComplete = () => {
         catch(error){
           console.log(error);
           alert('Please complete the profile')
-          navigate('/')
+          navigate('/login')
         }
     }        
     

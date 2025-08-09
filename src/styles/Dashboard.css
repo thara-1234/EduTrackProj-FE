@@ -1,0 +1,17 @@
+.admin-dashboard {
+  display: flex;
+}
+
+.admin-dashboard-content {
+  flex: 1;
+}
+
+.dashboard-body {
+  padding: 20px;
+  width: 100%;
+}
+
+.dashboard-title {
+  margin-left: 300px;
+  font-size: 35px;
+}

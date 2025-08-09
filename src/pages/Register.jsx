@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Register.css'
+import '../styles/Register.css'
 import ApiService from '../services/ApiService'
 
 const Register = () => {
@@ -70,6 +70,7 @@ const Register = () => {
             <label>Role:</label><br/>
             <select name="roleName"  value={formData.roleName}
             onChange={(e) => setFormData({ ...formData, roleName: e.target.value })}>
+                <option value="">--Select Role--</option>
                 <option value="ADMIN">ADMIN</option>
                 <option value="HOD">HOD</option>
                 <option value="PROJECT_IN_CHARGE">PROJECT_IN_CHARGE</option>

@@ -1,0 +1,65 @@
+/* ================= HEADER ================= */
+.header {
+  background: #34495e;
+  color: #fff;
+  padding: 15px 30px;
+  margin-left: 200px; /* same as sidebar width */
+  text-align: center;
+  height: 100px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 56px;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 200px;
+  background: #fdbc8a;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar-link:hover {
+  background: #d67a38;
+}
+
+.no-role {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ================= USER CARD ================= */
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
