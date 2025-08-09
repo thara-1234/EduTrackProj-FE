@@ -6,7 +6,8 @@ import Register from './pages/Register';
 import ProfileComplete from './pages/ProfileComplete';
 import AdminDashboard from './AdminDashBoard/AdminDashBoard';
 import { UserProvider } from './contexts/UserContext';
-
+import ManageUsers from './AdminDashBoard/ManageUsers';
+import EditUser from './AdminDashBoard/EditUser';
 function App() {
   return (
     <UserProvider>
@@ -17,6 +18,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/completeProfile" element={<ProfileComplete />} />
           <Route path="/adminDashboard" element={<AdminDashboard />} />
+          <Route path="/manage-users" element={<ManageUsers />} />
+          <Route path="/edit-user/:id" element={<EditUser />} />
         </Routes>
       </Router>
     </UserProvider>
